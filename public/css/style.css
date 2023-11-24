@@ -1,0 +1,145 @@
+body {
+    background-color: burlywood;
+}
+
+/* all pages nav bar - top-bottom */
+
+nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li:hover{
+  text-shadow: 0.3rem 0.3rem 0.3rem rgb(141, 116, 56);
+  cursor: pointer;
+}
+
+nav ul li{
+    margin-right: 1rem;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+/* back btn */
+
+.back-btn {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.back-btn ul li:hover{
+    text-shadow: 0.3rem 0.3rem 0.3rem rgb(141, 116, 56);
+    cursor: pointer;
+}
+
+.back-btn ul li{
+    margin-right: 1rem;
+    list-style: none;
+    margin: 0 4rem 3rem 0;
+}
+
+.back-btn ul li a{
+    text-decoration: none;
+}
+
+/* first page main  */
+.index-page div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: aliceblue;
+    text-align: center;
+    background-image: url(/images/franz-liszt-fantasizing-piano-painting.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vw;
+ }
+
+ .index-page div h1 {
+    font-size: 5rem;
+ }
+
+ .index-page div p {
+    text-shadow: 0.3rem 0.2rem 0.5rem rgb(255, 255, 255);
+ }
+
+ /* first page footer */
+ .index-page footer p {
+    font-size: x-small;
+    height: 0.6rem;
+    margin-left: 3rem;
+ }
+
+ /* about page */
+
+.about-page div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-page div:last-of-type > p {
+    margin: 1rem 3rem;
+    text-indent: 3rem;
+}
+
+.about-page div:last-of-type p::first-letter {
+    font-size: xx-large;
+    text-shadow: 0.2rem 0.1rem 0.4rem black;
+    color: burlywood;
+    margin-right: 0.3rem;
+}
+
+/* compositions page */
+
+.comps-page div:first-of-type {
+   text-align: center;
+   margin: 0 3rem 4rem 3rem;
+}
+
+.comps-page div:last-of-type ul li {
+    list-style: none;
+    margin: 0.5rem 0 0 5rem;
+}
+
+.comps-page div:last-of-type ul li a{
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.comps-page div:last-of-type ul li a:hover{
+    text-shadow: 0.3rem 0.3rem 0.3rem rgb(141, 116, 56);
+    cursor: pointer;
+}
+
+/* picture gallery */
+
+
+.pic-page h1 {
+    text-align: center;
+    margin: 2rem 0 4rem 0 ;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.last-column {
+    display: flex;
+    align-items: flex-start;
+}
+
+img:hover {
+    position:relative;
+    top:10px;    
+    transition: ease-in-out 2s;
+}
